@@ -1,5 +1,7 @@
 ```
-Hi, please follow the instructions below to get started. Don't hesitate to message me if you have any questions about this software and I will try to help you understand it. Thank you!
+Hi, please follow the instructions below to get started.
+Don't hesitate to message me if you have any questions about this software
+and I will try to help you understand it. Thank you!
 
 ```
 
@@ -8,16 +10,20 @@ Hi, please follow the instructions below to get started. Don't hesitate to messa
 ## Docker setup
 
 ```
-#make a copy of env file
+---- make a copy of env file
+
 cp .env.example .env
 
-##Docker build
+---- Docker build
+
 docker-compose build
 
-#build docker
+----- Build docker
+
 docker-compose up -d
 
-#access php container
+---- Access php container
+
 docker exec -it {app-name}-php bash
 ```
 
@@ -25,8 +31,11 @@ docker exec -it {app-name}-php bash
 
 ```
 root@123456789abcde:/var/www/html#composer install
+
 root@123456789abcde:/var/www/html#php artisan key:generate
+
 root@123456789abcde:/var/www/html#composer require weidner/goutte
+
 root@123456789abcde:/var/www/html#composer dump-autoload
 ```
 
